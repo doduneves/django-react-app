@@ -1,4 +1,4 @@
-# Contacts APP
+# Django-ReactJS Contact List
 
 A Contacts list management app made with Python (Django) and ReactJS
 
