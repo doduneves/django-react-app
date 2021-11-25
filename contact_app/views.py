@@ -42,7 +42,7 @@ class ContactViewSet(viewsets.ModelViewSet):
             self.perform_create(serializer)
             headers = self.get_success_headers(serializer.data)
 
-            if settings.SEND_CONFIRMATION_MAIL:
+            if settings.SEND_CONFIRMATION_MAIL == "True":
                 send_confirmation_mail(request.user, serializer.data['name'], serializer.data['email'])
 
             return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
