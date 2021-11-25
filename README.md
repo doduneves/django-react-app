@@ -50,3 +50,8 @@ Then you can do all CRUD operations accessing *http://localhost:8000/api/contact
 	'Authorization': 'Bearer <accesss_token>'
 }
 ```
+
+
+### Test
+To run the API tests, you just need to execute:
+`python manage.py test contact_app`
